@@ -1,0 +1,21 @@
+.settings/
+target/
+.idea/
+*.iml
+build.properties
+
+# 关闭proto模块的xml配置，新拉取的代码使用build-proto.xml.back根据本地环境配置即可
+build-proto.xml
+build.xml
+codeGenerator.properties
+
+# 禁止提交log文件和解压后的svnant
+svnant-1.3.1/
+*.log
+.DS_Store
+jade.cfg
+
+# 自动生成的py代码不要生成
+*_pb2.py
+
+.pyc
