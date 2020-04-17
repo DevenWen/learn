@@ -13,4 +13,4 @@ spring:
 
 tutorial:
   client:
-    duration: 10000 # 运行10s
+    duration: 100000 # 运行10s

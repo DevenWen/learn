@@ -1,7 +1,7 @@
-package com.qpm.learn.springcloud.config;
+package com.qpm.learn.springcloud.tut1;
 
-import com.qpm.learn.springcloud.message.Tut1Receiver;
-import com.qpm.learn.springcloud.message.Tut1Sender;
+import com.qpm.learn.springcloud.tut1.Tut1Receiver;
+import com.qpm.learn.springcloud.tut1.Tut1Sender;
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Profile;
  */
 @Profile({"tut1", "hello-world"})
 @Configuration
-public class QueueConfig {
+public class QueueTut1Config {
 
     @Bean
     public Queue hello() {

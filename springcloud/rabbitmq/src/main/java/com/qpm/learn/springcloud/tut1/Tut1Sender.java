@@ -1,4 +1,4 @@
-package com.qpm.learn.springcloud.message;
+package com.qpm.learn.springcloud.tut1;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Queue;
