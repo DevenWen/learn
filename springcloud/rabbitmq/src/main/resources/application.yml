@@ -2,11 +2,9 @@ spring:
   profiles:
     active:
       - usage_message
-  application:
-    name: usage_message
 
   rabbitmq:
-    host: 192.168.23.111
+    host: myubuntu
     port: 5672
     username: user
     password: password

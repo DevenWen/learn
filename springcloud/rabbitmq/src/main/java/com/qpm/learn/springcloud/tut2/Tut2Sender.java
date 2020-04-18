@@ -23,7 +23,7 @@ public class Tut2Sender {
     AtomicInteger count = new AtomicInteger(0);
 
 
-    @Scheduled(fixedDelay = 1000, initialDelay = 300)
+    @Scheduled(fixedDelay = 100, initialDelay = 30)
     public void send() {
         StringBuilder builder = new StringBuilder("hello");
         if (dots.getAndIncrement() == 3) {
