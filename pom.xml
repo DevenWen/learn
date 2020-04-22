@@ -17,6 +17,7 @@
     <module>designPattern</module>
       <module>springcloud</module>
       <module>base</module>
+    <module>spring</module>
   </modules>
 
   <name>learn</name>
