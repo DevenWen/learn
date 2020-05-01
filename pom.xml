@@ -18,6 +18,7 @@
       <module>springcloud</module>
       <module>base</module>
     <module>spring</module>
+      <module>simpletest</module>
   </modules>
 
   <name>learn</name>
@@ -40,6 +41,14 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
     </dependency>
   </dependencies>
 
