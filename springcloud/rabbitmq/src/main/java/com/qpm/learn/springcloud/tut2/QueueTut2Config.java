@@ -11,6 +11,7 @@ public class QueueTut2Config {
 
     @Bean
     public Queue hello() {
+
         return new Queue("hello");
     }
 

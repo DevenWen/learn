@@ -4,7 +4,7 @@ spring:
       - usage_message
 
   rabbitmq:
-    host: myubuntu
+    host: 192.168.23.111
     port: 5672
     username: user
     password: password
