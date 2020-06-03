@@ -11,6 +11,7 @@ public class BinarySearch {
 
     /**
      *
+     *
      * @param key
      * @param a
      * @return -1 找不到指定对象
