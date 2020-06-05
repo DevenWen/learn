@@ -18,7 +18,6 @@
       <module>springcloud</module>
       <module>base</module>
     <module>spring</module>
-      <module>simpletest</module>
   </modules>
 
   <name>learn</name>
