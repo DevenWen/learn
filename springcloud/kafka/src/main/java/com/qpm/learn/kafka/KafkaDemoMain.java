@@ -17,7 +17,7 @@ public class KafkaDemoMain {
         ConfigurableApplicationContext context = SpringApplication.run(KafkaDemoMain.class, args);
         KafkaSender sender = context.getBean(KafkaSender.class);
         for (int i = 0; i < 3; i++) {
-            sender.send();
+            sender.log4jSend();
         }
     }
 

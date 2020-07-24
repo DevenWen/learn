@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Properties>
+
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${sys:CONSOLE_LOG_PATTERN}"/>
+        </Console>
+        <Kafka name="kafkaAppenders" topic="test">
+            <PatternLayout pattern="%message" />
+            <Property name="bootstrap.servers">${env:KAFKA_ENDPOINTS:${spring.kafka.bootstrap-servers}}</Property>
+        </Kafka>
+    </Appenders>
+    <Loggers>
+        <logger name="org.springframework" level="info"/>
+        <logger name="org.hibernate" level="info"/>
+        <logger name="org.apache.kafka" level="info"/>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+        <AsyncLogger name="kafkaLogger" level="info" includeLocation="true">
+            <!-- 消息发射器 -->
+            <AppenderRef ref="kafkaAppenders"/>
+        </AsyncLogger>
+    </Loggers>
+</Configuration>
