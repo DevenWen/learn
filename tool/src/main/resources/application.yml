@@ -1,0 +1,8 @@
+ftp:
+  server:
+    info: ftp://test:test@local.qpm.com
+  local:
+    dir: file:${local.dir}
+
+local:
+  dir: ./
