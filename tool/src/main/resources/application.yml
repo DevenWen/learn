@@ -1,8 +1,13 @@
 ftp:
+  host: ftp.qpm.com
+  username: test
+  password: test
+  url: ftp://${ftp.username}:${ftp.password}@${ftp.host}
   server:
-    info: ftp://test:test@local.qpm.com
+    info: ${ftp.url}/CLEAR
   local:
     dir: file:${local.dir}
 
 local:
   dir: ./
+
